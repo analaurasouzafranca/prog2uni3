@@ -21,7 +21,7 @@ const politicos: Politico[] = [];
 
 // 1 presidente 
 const presidente = new Presidente(
-    "Ana Presidente", "Partido Alfa", "Palácio do Planalto",
+    "Pres. Luís Inácio Lula da Silva", "Partido dos Trabalhadores", "Palácio do Planalto",
     "Praça dos Três Poderes, Brasília-DF", 46366.19, 38
 );
 presidente.adicionarProjeto("Reforma da Infraestrutura Nacional");
@@ -37,13 +37,13 @@ politicos.push(presidente);
 
 // 2 governadores: do meu estado e de outro
 const gov1 = new governador(
-    "Carlos Governador", "Partido Beta", ESTADO,
-    `Palácio do Governo de ${ESTADO}`, `Praça Central, s/n - ${ESTADO}`, 35000.0, 20
+    "Governadora Raquel Lyra", "Partido Social Democrático", ESTADO,
+    `Palácio do Governo de ${ESTADO}`, `Praça da República, s/n - Santo Antônio - ${ESTADO}`, 60800.0, 27
 );
 gov1.adicionarProjeto("Programa Estadual de Rodovias");
 const gov2 = new governador(
-    "Bia Governadora", "Partido Gama", ESTADO,
-    `Palácio do Governo de ${ESTADO}`, `Av. Principal, 100 - ${ESTADO}`, 35000.0, 18
+    "Governador Tarcisio de Freitas", "Partido Republicanos", "São Paulo",
+    `Palácio do Governo de ${"São Paulo"}`, `Avenida Morumbi, 4500 - Morumbi, São Paulo - SP`, 36301.53, 25
 );
 gov2.adicionarProjeto("Saúde Mais Perto");
 politicos.push(gov1, gov2);
@@ -59,11 +59,11 @@ politicos.push(gov1, gov2);
 // 5 deputados federais 
 const endCamara = "Praça dos Três Poderes, Brasília-DF";
 politicos.push(
-    new deputadofederal("Fed Um", "Partido Alfa", "Câmara dos Deputados", endCamara, 46366.19, "Ruralista"),
-    new deputadofederal("Fed Dois", "Partido Beta", "Câmara dos Deputados", endCamara, 46366.19, "Ambientalista"),
-    new deputadofederal("Fed Três", "Partido Gama", "Câmara dos Deputados", endCamara, 46366.19, "Governista"),
-    new deputadofederal("Fed Quatro", "Partido Alfa", "Câmara dos Deputados", endCamara, 46366.19, "Ruralista"),
-    new deputadofederal("Fed Cinco", "Partido Beta", "Câmara dos Deputados", endCamara, 46366.19, "Ambientalista")
+    new deputadofederal("Túlio Gadêlha", "Partido Social Democrático", "Câmara dos Deputados", endCamara, 46366.19, "Ruralista"),
+    new deputadofederal("Pedro Campos", "Partido Socialista Brasileiro", "Câmara dos Deputados", endCamara, 46366.19, "Ambientalista"),
+    new deputadofederal("Carlos Veras", "Partido dos Trabalhadores", "Câmara dos Deputados", endCamara, 46366.19, "Governista"),
+    new deputadofederal("Guilherme Boulos", "Partido Socialismo e Liberdade", "Câmara dos Deputados", endCamara, 46366.19, "Ruralista"),
+    new deputadofederal("Eduardo Bolsonaro", "Partido Liberal", "Câmara dos Deputados", endCamara, 46366.19, "Ambientalista")
 );
 
 
@@ -79,11 +79,11 @@ politicos.push(
 const endAssA = `Rua da Assembleia, 1 - ${ESTADO}`;
 const endAssB = `Rua da Assembleia, 2 - ${ESTADO}`;
 politicos.push(
-    new deputadoestadual("Est Um", "Partido Alfa", ESTADO, endAssA, 25322.25, "Comissão de Educação"),
-    new deputadoestadual("Est Dois", "Partido Beta", ESTADO, endAssA, 25322.25, "Comissão de Saúde"),
-    new deputadoestadual("Est Três", "Partido Gama", ESTADO, endAssA, 25322.25, "Comissão de Finanças"),
-    new deputadoestadual("Est Quatro", "Partido Alfa", ESTADO, endAssB, 25322.25, "Comissão de Educação"),
-    new deputadoestadual("Est Cinco", "Partido Beta", ESTADO, endAssB, 25322.25, "Comissão de Saúde")
+    new deputadoestadual("Pastor Júnior Tércio", "Partido Progressista", ESTADO, endAssA, 25322.25, "Comissão de Educação"),
+    new deputadoestadual("Delegada Gleide Angelo", "Partido Socialista Brasileiro", ESTADO, endAssA, 25322.25, "Comissão de Saúde"),
+    new deputadoestadual("Coronel Alberto Feitosa", "Partido Liberal", ESTADO, endAssA, 25322.25, "Comissão de Finanças"),
+    new deputadoestadual("Eduardo Matarazzo", "Partido dos Trabalhadores", "São Paulo", endAssB, 25322.25, "Comissão de Educação"),
+    new deputadoestadual("Carlos Giannazi", "Partido Socialismo e Liberdade", "São Paulo", endAssB, 25322.25, "Comissão de Saúde")
 );
 
 
@@ -97,9 +97,9 @@ politicos.push(
 // 3 senadores 
 const endSenado = "Praça dos Três Poderes, Brasília-DF";
 politicos.push(
-    new Senador("Sen Um", "Partido Alfa", ESTADO, "Senado Federal", endSenado, 46366.19, 2022),
-    new Senador("Sen Dois", "Partido Beta", ESTADO, "Senado Federal", endSenado, 46366.19, 2018),
-    new Senador("Sen Três", "Partido Gama", ESTADO, "Senado Federal", endSenado, 46366.19, 2022)
+    new Senador("Humberto Costa", "Partido dos Trabalhadores", ESTADO, "Senado Federal", endSenado, 46366.19, 2022),
+    new Senador("Maria Teresa", "Partido dos Trabalhadores", ESTADO, "Senado Federal", endSenado, 46366.19, 2018),
+    new Senador("Marcos Pontes", "Partido Liberal", "São Paulo", "Senado Federal", endSenado, 46366.19, 2022)
 );
 
 
